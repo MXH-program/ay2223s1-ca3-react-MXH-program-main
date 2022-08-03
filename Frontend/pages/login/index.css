@@ -1,0 +1,16 @@
+.login{
+    background: #dde7ef;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+.ant-form-horizontal{
+    width: 500px
+}
+h3{
+    font-size: 23px;
+    padding-bottom: 10px;
+}
