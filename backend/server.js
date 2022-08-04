@@ -143,6 +143,18 @@ app.get("/api/user", async (req, res, next) => {
   }
 });
 
+app.get("/api/user/test", async (req, res, next) => {
+  try {
+    console.log(req.query);
+
+    const allMessage = await pool.query("SELECT * FROM users");
+
+    res.json(allMessage.rows);
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
 app.delete("/api/user", async (req, res, next) => {
   try {
     console.log(req.params);
